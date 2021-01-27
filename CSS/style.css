@@ -771,5 +771,11 @@ form.section-contactenos_form textarea:hover{
     margin: auto;
     justify-content: space-evenly;
     align-items: center;
+    font-size: ;
 
+}
+
+.footer-container span{
+    font-size: 20px;
+ 
 }
