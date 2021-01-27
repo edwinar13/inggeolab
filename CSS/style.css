@@ -1,0 +1,760 @@
+
+
+body{
+    font-family: 'Overpass', sans-serif;
+    scroll-behavior: smooth;  
+}
+
+
+
+/******************************/
+/**********  HEADER  **********/
+/******************************/
+
+.nav-container{  
+    background-color: rgba(82, 97, 97, 0.3);    
+    color: rgb(250, 250, 250); 
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-li{
+    display: inline-block;
+}
+
+
+.nav-li a{
+    text-decoration: none;
+    height: 50px;
+    color: rgb(250, 250, 250);
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.nav-li-logo{
+    
+    position: absolute;    
+    left: 12px;
+    font-size: 40px;
+    padding: 10px;
+    
+}
+.nav-li-logo span{
+    color: rgb(187, 211, 171);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 900;
+   
+}
+.nav-li-logo b{
+    color: rgb(255, 255, 255);
+}
+.nav-li-user{
+    padding: 25px;
+    position: absolute;    
+    right: 12px;
+}
+
+
+
+/*
+
+.nav-container img{
+    display: inline-block;
+    height: 40px;
+    width: 40px;        
+    border-radius: 50%;
+    border: 1px solid rgb(153, 153, 153);     
+    object-fit: cover;
+    object-position: center;
+    position: absolute;    
+    right: 12px;
+    top: 15px;
+}
+
+
+@media only screen and (max-width: 500px){
+    .nav-a-web i{
+        transform: translatex(500px);
+        transition: all 1.0s; 
+        display: none;        
+    }
+}
+
+
+*/
+
+
+
+.article-container{  
+    width: 100%;  
+    scroll-behavior: smooth;  
+    
+}
+/***************************************/
+/**********  seccion inicio   **********/
+/***************************************/
+
+
+.section-inicio{
+    height: 100vh; 
+    display: flex;
+    flex-wrap: wrap;    
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    /*parallax - color fondo  - que se quede fija - para quen no se repita  - posicion posicion */
+    background: rgba(3, 3, 3, 0.2) fixed no-repeat 50% 50% ;
+    background-size: cover;
+    background-image: url("../images/figuras_prueba/inicio_2.PNG");
+
+}
+
+.section-inicio_logo{
+    width: 500px;
+    text-align: center;
+    
+}
+
+.section-inicio .text{
+    
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0 20px 20px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.section-inicio img{
+    
+    width: 200px;
+    height: 250px;
+    position: relative;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    
+
+}
+.section-inicio b{
+    font-size: 140px;
+    font-weight: 900;
+    color: rgb(187, 211, 171);
+}
+
+
+
+@media only screen and (max-width: 550px){
+
+
+    .section-inicio_logo h2{   
+        font-size: 70px;
+        transition: all 1.0s; 
+    }
+    
+    .section-inicio_logo img{   
+        transform: scale(0.8);
+        transition: all 0.5s; 
+         
+    }
+    .section-inicio .text{    
+        font-size: 60px;
+    }
+    .section-inicio b{
+        font-size: 90px;
+    }
+    
+}
+
+
+/*****************************************/
+/**********  seccion nosotros   **********/
+/*****************************************/
+
+
+.section-nosotros{    
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.section-nosotros_card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    justify-content: space-evenly;
+}
+
+.section-nosotros_card-img{
+    width: 450px;
+    text-align: center; 
+    
+}
+
+.section-nosotros_card-text{
+    width: 600px;   
+    text-align: justify;
+    font-size: 18px;
+    display: flex;
+    
+    
+    
+}
+
+
+.section-nosotros_title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 5px;
+}
+.section-nosotros p{
+    margin: 20px 20px 0 20px;
+}
+
+.section-nosotros img{    
+    
+    height: 300px;
+    position: relative;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+@media only screen and (max-width: 650px){
+
+ 
+    .section-nosotros_card-img {
+        width: 100%;
+        transition: all 0.5s; 
+
+    }
+    .section-nosotros_card-text{
+        width: 100%;  
+        transition: all 0.5s; 
+    }
+    .section-nosotros_card-img img{
+        
+        height: 180px;
+        width: 240px;
+        transition: all 0.5s; 
+
+    }
+
+}
+
+
+
+
+
+/******************************************/
+/**********  seccion servicios   **********/
+/******************************************/
+
+
+
+.section-servicios{
+    
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(193, 204, 204, 0.2);
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section-servicios_container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;
+}
+
+/* title */
+
+.section-servicios_title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+/* intro */
+
+
+.section-servicios_intro-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.section-servicios_intro-card-img{
+    width: 450px;
+    text-align: center; 
+    
+}
+
+.section-servicios_intro-card-text{
+    width: 600px;   
+    text-align: justify;
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 20px;
+    
+        
+}
+
+.section-servicios_intro p{
+    margin: 20px 40px 0 20px;
+    
+}
+.section-servicios_intro img{    
+        height: 300px;
+    position: relative;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/*    cloud-workgroup-reports   */
+
+.section-servicios .card{
+    width: 300px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.section-servicios_title-card{
+    display: flex;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@media only screen and (max-width: 650px){
+
+ 
+    .section-servicios_intro-card-img {
+        width: 100%;
+        transition: all 0.5s; 
+
+    }
+    .section-servicios_intro-card-text{
+        width: 100%;  
+        transition: all 0.5s; 
+    }
+    .section-servicios_intro-card-img img{
+        height: 80%;
+        width: 80%;
+        transition: all 0.5s; 
+
+    }
+
+}
+
+
+
+
+
+/***************************************/
+/**********  seccion equipo   **********/
+/***************************************/
+
+
+
+.section-equipo{
+    
+    display: flex;
+    flex-wrap: wrap;    
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    /*parallax - color fondo  - que se quede fija - para quen no se repita  - posicion posicion */
+    background: rgba(3, 3, 3, 0.2) fixed no-repeat 50% 50% ;
+    background-size: cover;
+    background-image: url("../images/figuras_prueba/Fondo.png");
+
+}
+
+.section-equipo_container{
+    
+    display: flex;
+    flex-wrap: wrap;    
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;   
+    width: 100%;
+
+}
+
+/* title */
+.section-equipo_title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+
+/* CEO */
+
+.section-equipo .card{
+    width: 500px; 
+    text-align: center;
+    
+}
+
+.section-equipo .text{
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+
+.section-equipo img{
+    
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+/********************************************/
+/**********  seccion contactenos   **********/
+/********************************************/
+
+
+
+
+
+/*
+ <section id="section-contactenos" class="section-contactenos">
+            <div class=" section-contactenos_title">
+                <div class=" section-contactenos_title-info">
+                    <img src="images/Icono_4_PNG.PNG" alt="">
+                    <h2 class="text">Información de contacto</h2>
+                </div>
+            </div>
+            <form class="section-contactenos_form">
+                <h3>Envianos un mesaje</h3>
+                <div class="section-contactenos__user-info">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje"> </textarea>
+
+                    <input type="button" value="Enviar mensaje" id="btn-enviar">
+
+                </div>
+                
+            </form>
+
+        </section>
+*/
+
+
+/* Formulario*/
+
+
+
+
+
+/********************************************/
+/**********  seccion contactenos   **********/
+/********************************************/
+
+.section-contactenos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.section-contactenos_container{
+    width: 700px;
+    margin: 50px 0;
+    background: rgb(62, 62, 62);
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 50px auto;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(3, 3, 3, 0.2);
+    
+
+}
+
+
+
+
+
+/*contac sup*/
+
+.section-contactenos_sup{
+    height: 50px;
+    width: 100%;
+    background: rgb(77, 77, 77);
+    border-radius: 20px 20px 0 0 ;
+}
+.section-contactenos_sup p{
+    color: aliceblue;
+    font-size: 30px;
+    margin: 15px 30px
+}
+.section-contactenos_sup .text-1{
+    color: rgb(237, 28, 111);
+}
+.section-contactenos_sup .text-2{
+    color: rgb(232, 233, 37);
+}
+.section-contactenos_sup .text-3{
+    color: rgb(115, 195, 79);
+}
+
+
+
+/*contac info*/
+
+.section-contactenos_title{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+.section-contactenos_title-info{
+    width: 100%;
+}
+
+.section-contactenos_title h2{
+    
+    color: rgb(238, 27, 111);
+    font-size: 35px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+.section-contactenos_title p{
+    
+    color: rgb(133, 133, 133);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+
+
+
+
+/* contac form */
+form.section-contactenos_form{
+    width: 420px;
+}
+
+form.section-contactenos_form .section-contactenos__user-info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+
+
+form.section-contactenos_form input{
+    width: auto;
+    padding: 10px 5px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid rgb(133, 133, 133);
+    background: rgb(62, 62, 62);
+    color: rgb(255, 255, 255);
+    
+
+}
+
+
+form.section-contactenos_form textarea{
+     
+    border: none;
+    border-bottom: 1px solid rgb(133, 133, 133);
+    background: rgb(62, 62, 62);
+    color: rgb(255, 255, 255);    
+    padding: 10px 0px;
+    margin: 10px 0;  
+    
+
+}
+
+
+
+form.section-contactenos_form textarea::placeholder{
+    color: rgb(133, 133, 133);
+}
+form.section-contactenos_form input::placeholder{
+    color: rgb(133, 133, 133);
+}
+form.section-contactenos_form textarea:focus{
+    outline:none;
+}
+form.section-contactenos_form input:focus{
+    outline:none;
+}
+
+
+
+form.section-contactenos_form textarea{
+    
+    max-width: 100%;
+    max-height: 150px; 
+    min-width: 100%;  
+    min-height: 70px;
+
+}
+
+form.section-contactenos_form input[type="button"]{
+    
+    border: none;
+    width: 150px;
+    color: rgb(238, 27, 111);
+    font-size: 20px;
+    align-self: flex-end;
+    
+
+}
+form.section-contactenos_form input:hover,
+form.section-contactenos_form textarea:hover{
+    border-bottom: 1px solid rgb(115, 195, 79);
+}
+#btn-enviar:hover{
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (max-width: 750px){
+
+
+    .section-contactenos_title{
+        width: auto;
+        margin: 25px 50px 20px 50px;
+    }
+    
+    .section-contactenos_title h2{
+        margin-left: 0px;
+        margin-bottom: 0;
+    }        
+        
+    .section-contactenos_container{
+        width: 70%;  
+        min-width: 350px;     
+    
+    }
+    form.section-contactenos_form{
+        width: 100%;        
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+/******************/
+
+
+.section-contactenos_1{    
+    display: flex;
+    flex-wrap: wrap;    
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(255, 255, 255) ;
+
+}
+
+.section-contactenos_1 .card{
+    width: 700px;
+    height: 350px;  
+    text-align: center;
+    border: 2px solid rgba(82, 97, 97, 0.3);
+    margin-bottom: 100px;
+    
+}
+.section-contactenos_1_title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+/**********  FOOTER  **********/
+
+.footer-container{
+    z-index: 80;
+    font-size: 15px;
+    min-height: 4vh; 
+    width: 100%;  
+    height: 500px; 
+    background: rgba(193, 204, 204, 0.2);
+        
+    text-align: center;
+
+}
