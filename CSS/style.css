@@ -12,7 +12,8 @@ body{
 /******************************/
 
 .nav-container{  
-    background-color: rgba(82, 97, 97, 0.3);    
+    
+    background-color: rgba(62, 62, 62, 0.5);    
     color: rgb(250, 250, 250); 
     height: 70px;
     width: 100%;
