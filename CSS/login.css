@@ -29,6 +29,7 @@ body{
     width: 100%;
     position: fixed;
     z-index: 100;
+    border-bottom: 3px solid white;
 }
 
 .nav-li{
@@ -49,7 +50,7 @@ body{
     position: absolute;    
     left: 12px;
     font-size: 40px;
-    padding: 10px;
+    padding: 7px;
     
 }
 .nav-li-logo span{
@@ -116,7 +117,7 @@ form.section-contactenos_form{
 form.section-contactenos_form .section-contactenos__user-info{
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 30px 20px;
 }
 
 
@@ -151,7 +152,6 @@ form.section-contactenos_form h2{
     font-size: 35px;
     margin-bottom: 10px;
     text-align: center;
-    margin-top: 30px;
 }
 form.section-contactenos_form p{
     
@@ -159,12 +159,12 @@ form.section-contactenos_form p{
     display: flex;
     align-items: center;
     font-weight: 600;
-    margin: 10px auto 30px auto;
+    margin: 10px auto 0 auto;
     text-align: center;
 }
 
 form.section-contactenos_form a{
-text-decoration: none;
+    text-decoration: none;
 }
 #link-password:hover p{
     color: (187, 211, 171);
@@ -262,11 +262,10 @@ form.section-contactenos_form textarea:hover{
     font-size: 15px;
     min-height: 4vh; 
     width: 100%;   
-    background: rgba(193, 204, 204, 0.2);
     position: fixed;    
     bottom: 0;
     right: 0;
     text-align: center;
-    line-height: 2;
+    line-height: 2.0;
 
 }
